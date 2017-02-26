@@ -6,7 +6,7 @@ module.exports = function(app, userModel) {
     var users = [];
         users = [
              {	"_id":123, "firstName":"Survi",            "lastName":"Singh",
-                 "username":"survi",  "password":"survi",   "roles": ["admin"]		}
+                 "username":"singh.surv@husky.neu.edu",  "password":"survi",   "roles": ["admin"]		}
          ]
 
     function register(req, res) {
