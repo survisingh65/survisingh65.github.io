@@ -43,7 +43,7 @@
              var foundUser = null;
              for (var i = 0; i < users.length; i++) {
                  var u = users[i];
-                 if (u.username == user.username && u.password == user.password) {
+                 if (u.username == user.email && u.password == user.password) {
                      foundUser = u;
                  }
              }
