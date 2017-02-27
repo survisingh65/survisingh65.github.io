@@ -39,7 +39,7 @@
             return deferred.promise;
         }
 
-        function findUserByCredential(user){
+        function findUserByCredential(user, callback){
              var foundUser = null;
              for (var i = 0; i < users.length; i++) {
                  var u = users[i];
@@ -47,8 +47,9 @@
                      foundUser = u;
                  }
              }
-             return foundUser;
-                     
+             if (typeof callback === "function") {
+                 callback(foundUser);
+             }        
             
            // var deferred = $q.defer();
            // $http.post("/api/em/userlogin", user)
