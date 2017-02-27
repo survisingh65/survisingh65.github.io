@@ -1,13 +1,9 @@
-<div class="jumbotron text-center" ng-controller="HomeController">
+<div class="jumbotron text-center" ng-controller="HomeController" ng-init = "getPopularEvent()">
     <h2 class="tagline"><span class="app-logo">EVENTS</span> | <span>What's Happening Around Me</span></h2>
     <div class="row">
-        <div class="col-md-12">
+        <section class="col-md-12">
             <div id="map" class="map-view">
-
             </div>
-           <!-- <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
-                <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
-            </div>-->
-        </div>
+        </section>
     </div>
 </div>

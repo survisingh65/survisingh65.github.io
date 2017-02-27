@@ -8,6 +8,7 @@
         var eventId = $routeParams.event;
 
         $scope.saveEvent = saveEvent;
+        $scope.init = init;
 
         if(UserService.getUserFromWindowScope()){
             UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
@@ -39,7 +40,6 @@
                     }
                 )
         }
-        init();
 
 
         function saveEvent(event){
@@ -55,8 +55,6 @@
                           $location.url("/");
                       }
                  )
-            //}
-
         }
     }
 })();

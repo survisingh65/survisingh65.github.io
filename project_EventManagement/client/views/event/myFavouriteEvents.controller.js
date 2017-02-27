@@ -8,6 +8,7 @@
         $scope.basicSearchRecords = [];
         $scope.markers = [];
         $scope.createMarker = createMarker;
+        $scope.init = init;
 
         if(UserService.getUserFromWindowScope()){
             UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
@@ -39,7 +40,6 @@
                     }
                 )
         }
-        init();
 
         function createMarker(record){
                 var marker = new google.maps.Marker({

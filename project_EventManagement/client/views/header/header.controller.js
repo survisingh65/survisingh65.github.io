@@ -10,22 +10,22 @@
 
         $scope.logout = logout;
         $scope.getEvent = getEvent;
-        $scope.categories = [ {
-            value : '1',
-            text : 'Music'
-        }, {
-            value : '2',
-            text : 'Travel & Outdoor'
-        }, {
-            value : '3',
-            text : 'Food & Drink'
-        }, {
-            value : '4',
-            text : 'Seasonal & Holiday'
-        }, {
-            value : '6',
-            text : 'Science & Technology'
-        } ];
+        //$scope.categories = [ {
+        //    value : '1',
+        //    text : 'Music'
+        //}, {
+        //    value : '2',
+        //    text : 'Travel & Outdoor'
+        //}, {
+        //    value : '3',
+        //    text : 'Food & Drink'
+        //}, {
+        //    value : '4',
+        //    text : 'Seasonal & Holiday'
+        //}, {
+        //    value : '6',
+        //    text : 'Science & Technology'
+        //} ];
 
         if(UserService.getUserFromWindowScope()){
             UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));

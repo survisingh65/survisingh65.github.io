@@ -8,6 +8,7 @@
         $scope.basicSearchRecords = [];
         $scope.markers = [];
         $scope.createMarker = createMarker;
+        $scope.init = init;
 
         var vm = this;
         console.log("Inside Event List");
@@ -39,7 +40,6 @@
                     }
                 )
         }
-        init();
 
         function createMarker(record){
                 var marker = new google.maps.Marker({
