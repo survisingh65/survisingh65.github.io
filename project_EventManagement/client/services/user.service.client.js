@@ -6,6 +6,13 @@
 
     function UserService($http, $rootScope, $window, $q) {
 
+        var users = [];
+         users = [
+             {	"_id":123, "firstName":"Survi",            "lastName":"Singh",
+                 "username":"singh.surv@husky.neu.edu",  "password":"survi",   "roles": ["admin"]		},
+        ]
+
+
         var api = {
             createUser: createUser,
             findUserByCredential: findUserByCredential,
@@ -33,17 +40,27 @@
         }
 
         function findUserByCredential(user){
-            var deferred = $q.defer();
-            $http.post("/api/em/userlogin", user)
-                .then(
-                    function(response){
-                        deferred.resolve(response);
-                    },
-                    function(error){
-                        deferred.reject(error);
-                    }
-                );
-            return deferred.promise;
+             var foundUser = null;
+             for (var i = 0; i < users.length; i++) {
+                 var u = users[i];
+                 if (u.username == user.username && u.password == user.password) {
+                     foundUser = u;
+                 }
+             }
+             return foundUser;
+                     
+            
+           // var deferred = $q.defer();
+           // $http.post("/api/em/userlogin", user)
+           //     .then(
+           //         function(response){
+           //             deferred.resolve(response);
+           //         },
+           //         function(error){
+           //             deferred.reject(error);
+           //         }
+           //     );
+           // return deferred.promise;
         }
 
         function savePreference(user){

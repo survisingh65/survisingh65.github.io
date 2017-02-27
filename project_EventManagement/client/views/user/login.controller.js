@@ -10,15 +10,23 @@
 
         function login(user){
             console.log("Click Login button");
-            UserService.findUserByCredential(user)
-                .then(
-                    function(response){
-                        UserService.setUserToWindowScope(response.data[0]);
-                        UserService.setRootScope(response.data[0]);
+            UserService.findUserByCredential(user, 
+            function(response){
+                    UserService.setUserToWindowScope(response);
+                    UserService.setRootScope(response);
+                     
+                     $location.url("/"); 
+                 })
+            
+            
+            //    .then(
+            //        function(response){
+            //            UserService.setUserToWindowScope(response.data[0]);
+            //            UserService.setRootScope(response.data[0]);
 
-                        $location.url("/");
-                    }
-                )
+            //            $location.url("/");
+            //        }
+            //    )
 
         }
     }

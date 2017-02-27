@@ -3,4 +3,3 @@
         .module('EventApp', ['ngRoute'])
 })();
 
-// configure our routes
