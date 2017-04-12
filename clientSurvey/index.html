@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="surviapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+    <script src="views/home/home.controller.js"></script>
+    <script src="views/course/course.controller.js"></script>
+    <script src="views/contact/contact.controller.js"></script>
+    <script src="views/event/event.controller.js"></script>
+    <script src="views/survey/q1.controller.js"></script>
+    <script src="views/survey/q2.controller.js"></script>
+    <script src="directive/directive.js"></script>
+    <script src="services/eventService.js"></script>
+    <script src="factory/eventFactory.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <h1>My angular app</h1>
+    <div ng-include="'header.html'">
+
+    </div>
+
+
+    <div ng-view>
+
+    </div>
+</body>
+</html>
