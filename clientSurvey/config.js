@@ -6,6 +6,9 @@
     myapp
         .config(function($routeProvider) {
                 $routeProvider
+                    .when("/",{
+                        templateUrl: "views/survey/qualifier.view.html"
+                    })
                     .when("/home", {
                         templateUrl: "views/home/home.view.html"
                     })
@@ -22,6 +25,9 @@
                     .when("/survey",{
                         templateUrl: "views/survey/q1.view.html",
                         controller:"q1Controller"
+                    })
+                    .otherwise({
+                        redirectTo: "/"
                     })
             }
         )

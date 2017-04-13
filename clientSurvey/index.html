@@ -1,32 +1,152 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="surviapp">
-<head>
-    <meta charset="UTF-8">
-    <title>Angular</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
-    <script src="app.js"></script>
-    <script src="config.js"></script>
-    <script src="views/home/home.controller.js"></script>
-    <script src="views/course/course.controller.js"></script>
-    <script src="views/contact/contact.controller.js"></script>
-    <script src="views/event/event.controller.js"></script>
-    <script src="views/survey/q1.controller.js"></script>
-    <script src="views/survey/q2.controller.js"></script>
-    <script src="directive/directive.js"></script>
-    <script src="services/eventService.js"></script>
-    <script src="factory/eventFactory.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body>
-    <h1>My angular app</h1>
-    <div ng-include="'header.html'">
+<html class="no-js" ng-app="surviapp">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <title>SS</title>
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
 
-    </div>
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="../assets/css/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="../assets/css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="../assets/css/slider.css">
+        <!-- owl craousel css -->
+        <link rel="stylesheet" href="../assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="../assets/css/owl.theme.css">
+        <link rel="stylesheet" href="../assets/css/jquery.fancybox.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- modernizr js -->
+        <script src="../assets/js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="scripts/dirPagination.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <!-- owl carouserl js -->
+
+        <script src="../assets/js/owl.carousel.min.js"></script>
+        <!-- bootstrap js -->
+
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <!-- wow js -->
+        <script src="../assets/js/wow.min.js"></script>
+        <!-- slider js -->
+        <script src="../assets/js/slider.js"></script>
+        <script src="../assets/js/jquery.fancybox.js"></script>
+        <!-- template main js -->
+        <script src="app.js"></script>
+        <script src="config.js"></script>
 
 
-    <div ng-view>
 
-    </div>
-</body>
-</html>
+    </head>
+    <body>
+        <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <header id="top-bar" class="navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+                    
+                    <!-- logo -->
+                    <div class="navbar-brand">
+                        <a href="views/index.html" >
+                            <img src="../assets/images/logo.png" alt="Home">
+                        </a>
+                    </div>
+                    <!-- /logo -->
+                </div>
+                <!-- main menu -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <div class="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="../index.html" >Home</a>
+                            </li>
+                            <li><a href="../index.html#about">About</a></li>
+                            <li><a href="../index.html#works">Service</a></li>
+                            <li><a href="../index.html#call-to-action">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /main nav -->
+            </div>
+        </header>
+        
+        <!--
+        ==================================================
+        Slider Section Start
+        ================================================== -->
+        <section id="hero-area" >
+            <div class="container">
+                <div ng-view></div>
+            </div>
+        </section><!--/#main-slider-->
+
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="col-md-8">
+                        <p class="copyright">Copyright: <span>2015</span> . Design and Developed by Survi Singh</p>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Social Media -->
+                        <ul class="social">
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Facebook">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.twitter.com/themefisher" class="Twitter">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="Linkedin">
+                                    <i class="ion-social-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Google Plus">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer> <!-- /#footer -->
+                
+        </body>
+    </html>
