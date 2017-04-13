@@ -7,7 +7,12 @@
         .config(function($routeProvider) {
                 $routeProvider
                     .when("/",{
-                        templateUrl: "views/survey/qualifier.view.html"
+                        templateUrl: "views/survey/qualifier.view.html",
+                        controller: "qualifierController"
+                    })
+                    .when("/startSurvey",{
+                        templateUrl: "views/survey/startSurvey.view.html",
+                        controller: "startSurveyController"
                     })
                     .when("/home", {
                         templateUrl: "views/home/home.view.html"
