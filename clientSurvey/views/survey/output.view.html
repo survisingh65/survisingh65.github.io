@@ -3,7 +3,13 @@
         <div class="block wow fadeInUp" data-wow-delay=".3s">
             <section class="cd-intro">
                 <h1>Analysis Report</h1>
-                <h2>Survey Complete, Result is - {{out}}</h2>
+                <h2>Survey Complete, suitable frameworks/languages -
+                    <ul>
+                        <li ng-repeat="item in out">
+                            <b>{{item}}</b>
+                        </li>
+                    </ul>
+                </h2>
             </section>
         </div>
     </div>
