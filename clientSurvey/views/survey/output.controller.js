@@ -4,7 +4,7 @@
         var max = 0;
 
         for(d in data){
-            if(max<data[d])
+            if(max<data[d] && d !="None")
                 max = data[d];
             console.log(data[d]);
         }
