@@ -19,7 +19,12 @@
                         controller: "section1Controller"
                     })
                     .when("/section2",{
-                        templateUrl: "views/survey/section2.view.html"
+                        templateUrl: "views/survey/section2.view.html",
+                        controller:"section2Controller"
+                    })
+                    .when("/output",{
+                        templateUrl: "views/survey/output.view.html",
+                        controller:"outputController"
                     })
                     .when("/home", {
                         templateUrl: "views/home/home.view.html"
