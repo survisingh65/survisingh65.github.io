@@ -17,7 +17,7 @@
             }
             else{
                 console.log("Failure");
-                $rootScope.result = "Dont't Need cloud";
+                $rootScope.result = "Your company does not need a Big Data Project";
                 $rootScope.needCloud = "false";
                 $location.path("/startSurvey");
             }
