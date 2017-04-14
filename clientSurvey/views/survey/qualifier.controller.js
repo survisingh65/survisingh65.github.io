@@ -11,7 +11,7 @@
 
             if(validCounter >= 3){
                 console.log("Success");
-                $rootScope.result = "Need cloud";
+                $rootScope.result = "Your company needs a Big Data Project";
                 $rootScope.needCloud = "true";
                 $location.path("/startSurvey");
             }
