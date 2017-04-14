@@ -11,7 +11,7 @@
 
         var listOfFrameworks = [];
         for(d in data){
-            if(data[d] == max){
+            if(data[d] == max && d !="None"){
                 listOfFrameworks.push(d);
             }
         }
