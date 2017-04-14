@@ -14,6 +14,13 @@
                         templateUrl: "views/survey/startSurvey.view.html",
                         controller: "startSurveyController"
                     })
+                    .when("/section1",{
+                        templateUrl: "views/survey/section1.view.html",
+                        controller: "section1Controller"
+                    })
+                    .when("/section2",{
+                        templateUrl: "views/survey/section2.view.html"
+                    })
                     .when("/home", {
                         templateUrl: "views/home/home.view.html"
                     })
