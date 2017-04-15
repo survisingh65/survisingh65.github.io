@@ -1,6 +1,4 @@
-/**
- * Created by Ashish on 2/9/2017.
- */
+
 (function() {
     var myapp = angular.module("surviapp");
     myapp
