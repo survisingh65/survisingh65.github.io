@@ -7,6 +7,7 @@
         this.getData = getData;
         this.setData = setData;
 
+
         $rootScope.data = result = {
             Pentaho:0,
             Informatica:0,
@@ -18,12 +19,12 @@
             Flume:0,
             None:0
         }
-       function getData(){
-           return $rootScope.data;
-       }
+        function getData(){
+            return $rootScope.data;
+        }
 
         function setData(data){
-           $rootScope.data = data;
-       }
+            $rootScope.data = data;
+        }
     }
 })();

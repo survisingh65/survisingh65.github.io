@@ -2,71 +2,141 @@
     <div class="col-md-12">
         <div class="block wow fadeInUp" data-wow-delay=".3s">
             <section class="cd-intro text-center">
-                <h1>Section 2</h1>
+                <h1>Section 1</h1>
             </section>
-            <h2 align="left">Question 6: Do you want a UI for data visualisation?
-                <div class="radio" >
-                    <label><input type="radio" name="optradio6" ng-model="opt6" value="Pentaho,Informatica,Talend,SkyTree,NiFi">Yes</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio6" ng-model="opt6" value="None">No</label>
-                </div>
-            </h2>
-            <br>
-            <h2 align="left">Question 7: Do you want a UI for data flow design?
-                <div class="radio" >
-                    <label><input type="radio" name="optradio7" ng-model="opt7" value="Pentaho,Talend,SkyTree,NiFi">Yes</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio7" ng-model="opt7" value="None">No</label>
-                </div>
-            </h2>
-            <br>
-            <h2 align="left">Question 8: How do you categorize your organization programming skills?
-                <div class="radio" >
-                    <label><input type="radio" name="optradio8" ng-model="opt8" value="Pentaho,Informatica,Talend,SkyTree,Sqoop,Zookeeper,NiFi,Flume">High</label>
-                </div>
-                <div class="radio" >
-                    <label><input type="radio" name="optradio8" ng-model="opt8" value="Pentaho,Informatica,Talend,SkyTree,NiFi">Medium</label>
-                </div>
-                <div class="radio" >
-                    <label><input type="radio" name="optradio8" ng-model="opt8" value="Pentaho,Informatica,SkyTree">Low</label>
-                </div>
-            </h2>
-            <br>
-            <h2 align="left">Question 9: How would you describe the size of your technical recourses?
-                <div class="radio" >
-                    <label><input type="radio" name="optradio9" ng-model="opt9" value="Pentaho,Informatica,SkyTree">Small (1-20)</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio9" ng-model="opt9" value="Pentaho,Informatica,Talend,SkyTree,NiFi">Medium (20-50)</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio9" ng-model="opt9" value="Pentaho,Informatica,Talend,SkyTree,Sqoop,Zookeeper,NiFi,Flume">Large (50-150+)</label>
-                </div>
-            </h2>
-            <br>
-            <h2 align="left">Question 10: What integrated services do you require?
-                <div class="radio" >
-                    <label><input type="radio" name="optradio10" ng-model="opt10" value="Pentaho,Informatica,Talend">Data Integration</label>
-                </div>
-                <div class="radio" >
-                    <label><input type="radio" name="optradio10" ng-model="opt10" value="Pentaho,Informatica">Embedded Analytics</label>
-                </div>
-                <div class="radio" >
-                    <label><input type="radio" name="optradio10" ng-model="opt10" value="Pentaho,Talend">IoT Analytics</label>
-                </div>
-                <div class="radio" >
-                    <label><input type="radio" name="optradio10" ng-model="opt10" value="Talend,Informatica">Big Data Management/Governance</label>
-                </div>
-                <div class="radio" >
-                    <label><input type="radio" name="optradio10" ng-model="opt10" value="Talend,SkyTree,Informatica">Machine Learning</label>
-                </div>
-                <div class="radio" >
-                    <label><input type="radio" name="optradio10" ng-model="opt10" value="Sqoop,Zookeeper,Flume,NiFi">Distributed Data Coordination</label>
-                </div>
-            </h2>
-            <button align="right" class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" ng-click="OnNextSubmit()" data-wow-delay=".3s">Show Analysis</button>
+            <h1 align="left">Main Architecture and Design Specific
+                <h2 align="left">Question 26: How many users are expected to use your application?
+                    <div class="radio" >
+                        <label><input type="radio" name="optradio1" ng-model="opt26" value="Mapreduce,Hadoop,Storm">1 - 100</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" ng-model="opt26" value="Mapreduce,Hadoop,Storm">100 – 1000</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" ng-model="opt26" value="Mapreduce,Hadoop,Storm,Spark,Flink">1000 – 10000</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio1" ng-model="opt26" value="Mapreduce,Hadoop,Storm,Spark,Flink"><10000</label>
+                    </div>
+                </h2>
+                <br>
+                <h2 align="left">Question 27: What is the expected growth rate of the users using the application for the upcoming year?
+                    <div class="radio" >
+                        <label><input type="radio" name="optradio2" ng-model="opt27" value="Mapreduce,Hadoop,Storm"> 0.1-10%</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2" ng-model="opt27" value="Mapreduce,Hadoop,Storm">10 -19.99%</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2" ng-model="opt27" value="Mapreduce,Hadoop,Storm,Spark,Flink">20 - 50%</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2" ng-model="opt27" value="Mapreduce,Hadoop,Storm,Spark,Flink">Above 50%</label>
+                    </div>
+                </h2>
+                <br>
+                <h2 align="left">Question 28: What is the frequency of data flow or updates ?
+                    <div class="radio" >
+                        <label><input type="radio" name="optradio3" ng-model="opt28" value="Spark,Storm,Flink,Hadoop,Samza,Tigion">Continuously</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio3" ng-model="opt28" value="Storm,MapReduce,Hadoop,Samza">Hourly</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio3" ng-model="opt28" value="MapReduce,Hadoop,Samza,Tigion">Daily/weekly</label>
+                    </div>
+                </h2>
+                <br>
+                <h2 align="left">Question 29: Do you need a framework that supports security credentials and authentication?
+                    <div class="radio" >
+                        <label><input type="radio" name="optradio4" ng-model="opt29" value="MapReduce,Hadoop,Storm,Gridgain">Yes</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio4" ng-model="opt29" value="Tigion,Gluster,Peregrine,Samza">No</label>
+                    </div>
+                </h2>
+                <br>
+                <h1 align="left"> Data Ingestion Specific
+                    <h2 align="left">Question 30: Do you have all the data sources (prior knowledge of legacy data?
+                        <div class="radio" >
+                            <label><input type="radio" name="optradio5" ng-model="opt30" value="Mapreduce,Hadoop,Storm">Yes</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio5" ng-model="opt30" value="None">No</label>
+                        </div>
+                    </h2>
+                    <br>
+                    <h2 align="left">Question 31: Do you have all the data sources (prior knowledge of legacy data?
+                        <div class="radio" >
+                            <label><input type="radio" name="optradio6" ng-model="opt31" value="Spark,Flink">Yes</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio6" ng-model="opt31" value="None">No</label>
+                        </div>
+                    </h2>
+                    <br>
+                    <h2 align="left">Question 32: Are the data sources part of a public domain (third party data)?
+                        <div class="radio" >
+                            <label><input type="radio" name="optradio7" ng-model="opt32" value="Mapreduce,Storm,Spark,Flink">Yes</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio7" ng-model="opt32" value="None">No</label>
+                        </div>
+                    </h2>
+                    <br>
+                    <h1 align="left"> Application Performance and Delivery Specific
+                        <h2 align="left">Question 33: Do you want your application to be highly responsive?
+                            <div class="radio" >
+                                <label><input type="radio" name="optradio8" ng-model="opt33" value="Storm,Gridgain,Samza">Yes</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio8" ng-model="opt33" value="None">No</label>
+                            </div>
+                        </h2>
+                        <br>
+                        <h2 align="left">Question 34: Do you want to be charged as pay-per-use?
+                            <div class="radio" >
+                                <label><input type="radio" name="optradio9" ng-model="opt34" value="Spark,Flink,Gluster">Yes</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio9" ng-model="opt34" value="None">No</label>
+                            </div>
+                        </h2>
+                        <br>
+                        <h2 align="left">Question 35: What integrated service do you want in your application?
+                            <div class="checkbox" >
+                                <label><input type="checkbox" name="optradio10" ng-model="opt351" ng-true-value="'Mapreduce,Spark,Gluster,Tigion'">Messaging Platform</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="optradio10" ng-model="opt352" ng-true-value="'Hadoop'">Big-Data Analytics</label>
+                            </div>
+                            <div class="checkbox" >
+                                <label><input type="checkbox" name="optradio10" ng-model="opt353" ng-true-value="'Storm,Gridgain,Samza'">ElasticSearch-Interface</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="optradio10" ng-model="opt354" ng-true-value="'Spark,Gridgain'">Cloud Storage and Analytics</label>
+                            </div>
+                        </h2>
+                        <br>
+                        <h1 align="left"> Maintaining Overall Application and Data Quality Specific
+                            <h2 align="left">Question 36: Does your framework requires fault Tolerance?
+                                <div class="radio" >
+                                    <label><input type="radio" name="optradio11" ng-model="opt36" value="Storm,Spark,Flink,Gluster,Tigion">Yes</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio11" ng-model="opt36" value="None">No</label>
+                                </div>
+                            </h2>
+                            <br>
+                            <h2 align="left">Question 37: Would you like to take frequent data backups/Recovery?
+                                <div class="radio" >
+                                    <label><input type="radio" name="optradio12" ng-model="opt37" value="Mapreduce">Yes</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio12" ng-model="opt37" value="None">No</label>
+                                </div>
+                            </h2>
+                            <button align="right" class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" ng-click="OnNextSubmit()" data-wow-delay=".3s">Next >></button>
 
         </div>
     </div>

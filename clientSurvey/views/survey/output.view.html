@@ -5,8 +5,20 @@
                 <h1>Analysis Report</h1>
                 <h2>Survey Complete, suitable frameworks/languages -
                     <ul>
+                        <h2>Languages</h2>
                         <li ng-repeat="item in out">
+
                             <b>{{item}}</b>
+                        </li>
+                        <h2>Databases</h2>
+                        <li ng-repeat="items in out1">
+
+                            <b>{{items}}</b>
+                        </li>
+                        <h2>Frameworks</h2>
+                        <li ng-repeat="items in out2">
+
+                            <b>{{items}}</b>
                         </li>
                     </ul>
                 </h2>

@@ -2,67 +2,232 @@
     <div class="col-md-12">
         <div class="block wow fadeInUp" data-wow-delay=".3s">
             <section class="cd-intro text-center">
-                <h1>Section 1</h1>
+                <h1>Languages Section</h1>
             </section>
-            <h2 align="left">Question 1: What is your technical team’s preferred development platform?
+            <h2 align="left">Question 6: How do you categorize your organization’s programming skills?
                 <div class="radio" >
-                    <label><input type="radio" name="optradio1" ng-model="opt1" value="Pentaho,Informatica,Talend,SkyTree,Sqoop,Zookeeper,NiFi">Windows</label>
+                    <label><input type="radio" name="langradio6" ng-model="lang6" value="Flume,Zookeeper,NiFi,Talend,Pentaho,Sqoop,Informatica,Skytree">High</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio1" ng-model="opt1" value="Pentaho,Informatica,Sqoop,Zookeeper,Flume,NiFi">Linux</label>
+                    <label><input type="radio" name="langradio6" ng-model="lang6" value="NiFi,Talend,Pentaho,Informatica,Skytree">Medium</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio1" ng-model="opt1" value="Pentaho,Talend,SkyTree,Sqoop,Zookeeper,Flume,NiFi">Mac OS</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio1" ng-model="opt1" value="Pentaho,Talend,Sqoop,Zookeeper,Flume,NiFi">Unix</label>
+                    <label><input type="radio" name="langradio6" ng-model="lang6" value="Pentaho,Talend,SkyTree">Low</label>
                 </div>
             </h2>
             <br>
-            <h2 align="left">Question 2: What is your deployment or production platform?
+            <h2 align="left">Question 7: How would you describe the size of your technical resourses?
                 <div class="radio" >
-                    <label><input type="radio" name="optradio2" ng-model="opt2" value="Pentaho,Talend,NiFi">Windows</label>
+                    <label><input type="radio" name="langradio7" ng-model="lang7" value="Pentaho,Informatica,Skytree">Small (1-20)</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio2" ng-model="opt2" value="Pentaho,SkyTree,Sqoop,Zookeeper,Flume,NiFi">Linux</label>
+                    <label><input type="radio" name="langradio7" ng-model="lang7" value="NiFi,Talend,Pentaho,Informatica,Skytree">Medium (20-50)</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio2" ng-model="opt2" value="Pentaho,Talend,Sqoop,Zookeeper,Flume,NiFi">Mac OS</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio2" ng-model="opt2" value="Pentaho,Talend,Sqoop,Zookeeper,Flume,NiFi">Unix</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio2" ng-model="opt2" value="None">Any</label>
+                    <label><input type="radio" name="langradio7" ng-model="lang7" value="Flume,Zookeeper,NiFi,Talend,Pentaho,Sqoop,Informatica,Skytree">Large (50+)</label>
                 </div>
             </h2>
             <br>
-            <h2 align="left">Question 3: Do you want your integration tool to incorporate data analytics?
+            <h2 align="left">Question 8: What is your deployment/production platform?
                 <div class="radio" >
-                    <label><input type="radio" name="optradio3" ng-model="opt3" value="Pentaho,Informatica,Talend,SkyTree">Yes</label>
+                    <label><input type="radio" name="langradio8" ng-model="lang8" value="Pentaho,Talend,NiFi">Windows</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio3" ng-model="opt3" value="None">No</label>
+                    <label><input type="radio" name="langradio8" ng-model="lang8" value="Pentaho,SkyTree,Sqoop,Zookeeper,Flume,NiFi">Linux</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio8" ng-model="lang8" value="Pentaho,Talend,Sqoop,Zookeeper,Flume,NiFi">Mac OS</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio8" ng-model="lang8" value="Pentaho,Talend,Sqoop,Zookeeper,Flume,NiFi">Unix</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio8" ng-model="lang8" value="Flume,Zookeeper,Nifi,Talend,Pentaho,Sqoop,Informatica,Skytree">Any</label>
                 </div>
             </h2>
             <br>
-            <h2 align="left">Question 4: Is this for exploration or enterprise purchase?
+            <h2 align="left">Question 9: Do you want your integration tool to incorporate data analytics?
                 <div class="radio" >
-                    <label><input type="radio" name="optradio4" ng-model="opt4" value="Talend,Pentaho,Sqoop,Zookeeper,Flume,NiFi">Exploration - open source</label>
+                    <label><input type="radio" name="langradio9" ng-model="lang9" value="Pentaho,Informatica,Talend,Skytree">Yes</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio4" ng-model="opt4" value="Informatica,Talend,Skytree">Enterprise Purchase</label>
+                    <label><input type="radio" name="langradio9" ng-model="lang9" value="None">No</label>
                 </div>
             </h2>
             <br>
-            <h2 align="left">Question 5: Do you need to transform your data?
+            <h2 align="left">Question 10: Do you need to transform your data?
                 <div class="radio" >
-                    <label><input type="radio" name="optradio5" ng-model="opt5" value="Pentaho,Informatica,Talend,Sqoop,Flume">Yes</label>
+                    <label><input type="radio" name="langradio10" ng-model="lang10" value="Pentaho,Informatica,Talend,Sqoop,Flume">Yes</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio5" ng-model="opt5" value="None">No</label>
+                    <label><input type="radio" name="langradio10" ng-model="lang10" value="None">No</label>
                 </div>
             </h2>
+            <h2 align="left">Question 11: Do you want a UI for data visualisation?
+                <div class="radio" >
+                    <label><input type="radio" name="langradio11" ng-model="lang11" value="Pentaho,Informatica,Talend,Skytree,NiFi">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio11" ng-model="lang11" value="None">No</label>
+                </div>
+            </h2>
+            <h2 align="left">Question 12: Do you want a UI for data flow design?
+                <div class="radio" >
+                    <label><input type="radio" name="langradio12" ng-model="lang12" value="Pentaho,Talend,SkyTree,NiFi">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio12" ng-model="lang12" value="None">No</label>
+                </div>
+            </h2>
+
+            <h2 align="left">Question 13: What integrated services do you require? Check all that apply.
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optradio1" ng-model="lang131" ng-true-value="'Pentaho,Informatica,Talend'">Data Integration:
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optradio1" ng-model="lang132" ng-true-value="'Pentaho,Informatica'">Embedded Analytics:
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optradio1" ng-model="lang133" ng-true-value="'Pentaho,Talend'">IoT Analytics:
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optradio1" ng-model="lang134" ng-true-value="'Talend,Informatica'">Big Data Management/Governance:
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optradio1" ng-model="lang135" ng-true-value="'Talend,Skytree,Informatica'">Machine Learning:
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optradio1" ng-model="lang136" ng-true-value="'Sqoop,Zookeeper,Flume,NiFi'">Distributed Data Coordination:
+                    </label>
+                </div>
+            </h2>
+
+            <h2 align="left">Question 14: Does your project need predictive analytics?
+                <div class="radio" >
+                    <label><input type="radio" name="langradio14" ng-model="lang14" value="Talend,Informatica,Flume,Sqoop,Skytree,Pentaho,NiFi">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio14" ng-model="lang14" value="None">No</label>
+                </div>
+            </h2>
+
+            <h2 align="left">Question 15: What kind of data will you be receiving?
+                <div class="radio" >
+                    <label><input type="radio" name="langradio15" ng-model="lang15" value="Flume">Any</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio15" ng-model="lang15" value="Sqoop">Structured/Relational</label>
+                </div>
+            </h2>
+            <h2 align="left">Question 16: Does your company needs to divide the users into specific group to target them with suitable products  to be marketed to earn revenue?
+                <div class="radio" >
+                    <label><input type="radio" name="langradio16" ng-model="lang16" value="Flume">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio16" ng-model="lang16" value="None">No</label>
+                </div>
+
+            </h2>
+            <br>
+            <h2 align="left">Question 17: Do you require XA transaction rollback?
+                <div class="radio" >
+                    <label><input type="radio" name="langradio17" ng-model="lang17" value="Informatica">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio17" ng-model="lang17" value="None">No</label>
+                </div>
+
+            </h2>
+            <br>
+            <h2 align="left">Question 18: Do you require automatic documentation?
+                <div class="radio" >
+                    <label><input type="radio" name="langradio18" ng-model="lang18" value="Informatica">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio18" ng-model="lang18" value="None">No</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 19: Do you want a tool with a small footprint/overhead?
+
+                <div class="radio" >
+                    <label><input type="radio" name="langradio19" ng-model="lang19" value="Talend">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio19" ng-model="lang19" value="None" >No</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 20: How would you rate the level of transformations on your data?
+
+                <div class="radio" >
+                    <label><input type="radio" name="langradio20" ng-model="lang20" value="None">Low(0-30%)</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio20" ng-model="lang20" value="None">Medium(30-70%)</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio20" ng-model="lang20" value="Informatica">High(70%+)</label>
+                </div>
+            </h2>
+            <h2 align="left">Question 21: Does your data need to be partitioned?
+
+                <div class="radio" >
+                    <label><input type="radio" name="langradio21" ng-model="lang21" value="Informatica">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio21" ng-model="lang21" value="None" >No</label>
+                </div>
+            </h2>
+            <h2 align="left">Question 22: What is the purpose?
+
+                <div class="radio" >
+                    <label><input type="radio" name="langradio22" ng-model="lang22" value="Pentaho">BI/ Analytics</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio22" ng-model="lang22" value="Talend" >Big-Data/Data Integration</label>
+                </div>
+            </h2>
+            <h2 align="left">Question 23: Does the job procedures need to be reused in any java environment?
+
+                <div class="radio" >
+                    <label><input type="radio" name="langradio23" ng-model="lang23" value="Talend">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio23" ng-model="lang23" value="Pentaho" >No</label>
+                </div>
+            </h2>
+            <h2 align="left">Question 24: Convenience of UI
+
+                <div class="radio" >
+                    <label><input type="radio" name="langradio24" ng-model="lang24" value="Talend">Friendly</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio24" ng-model="lang24" value="None" >Less Friendly</label>
+                </div>
+            </h2>
+            <h2 align="left">Question 25: Would you be dealing with file-based dataflows such as FTP or protocols like SFTP, and HTTP integration?
+
+                <div class="radio" >
+                    <label><input type="radio" name="langradio25" ng-model="lang25" value="Nifi">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="langradio25" ng-model="lang25" value="Flume" >No, Only HDFS</label>
+                </div>
+            </h2>
+
             <button align="right" class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" ng-click="OnNextSubmit()" data-wow-delay=".3s">Next >></button>
 
         </div>

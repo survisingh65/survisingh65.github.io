@@ -1,0 +1,153 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="block wow fadeInUp" data-wow-delay=".3s">
+            <section class="cd-intro text-center">
+                <h1>Section 3</h1>
+            </section>
+            <h2 align="left">Question 38: What is the expected Data volume for your application?
+
+                <div class="radio" >
+                    <label><input type="radio" name="optradio38" ng-model="opt38"
+                                  value="Redis,CouchBase,OracleNoSQL,Datastax">Small(Terabytes)</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio38" ng-model="opt38"
+                                  value="OrientDB,MarkLogic,RethinkDB,Terrastore,RaptorDB,DynamoDB,CouchBase,MongoDB,Neo4j">Large(PetaBytes)</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio38" ng-model="opt38"
+                                  value="MarkLogic,HyperTable,Accumulo,Hbase,Cassandra">Very Large(Zetabytes)</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 39: What is the frequency of reads?
+
+                <div class="radio" >
+                    <label><input type="radio" name="optradio39" ng-model="opt39"
+                                  value="Redis,CouchBase,OracleNoSQL">Very Large(~ millions of reads per minute)</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio39" ng-model="opt39"
+                                  value="OrientDB,MarkLogic,RethinkDB,Terrastore,Datastax,RaptorDB,DynamoDB,CouchBase,MongoDB,Neo4j,Cassandra">Large (~ 10 thousands)</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio39" ng-model="opt39"
+                                  value="MarkLogic,HyperTable,Accumulo,Hbase,Cassandra">Small(~ thousands)</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 40: What is the frequency of writes?
+
+                <div class="radio" >
+                    <label><input type="radio" name="optradio40" ng-model="opt40"
+                                  value="Redis,CouchBase,OracleNoSQL">Small</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio40" ng-model="opt40"
+                                  value="OrientDB,MarkLogic,RethinkDB,Terrastore,Datastax,RaptorDB,DynamoDB,CouchBase,MongoDB,Neo4j,Cassandra">Large</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio40" ng-model="opt40"
+                                  value="MarkLogic,HyperTable,Accumulo,Hbase,Cassandra">Very Large</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 41: What is your tolerance for inconsistent data?
+
+                <div class="radio" >
+                    <label><input type="radio" name="optradio41" ng-model="opt41"
+                                  value="Redis,CouchBase,Cassandra,OracleNoSQL,MarkLogic,RethinkDB,Terrastore,RaptorDB,DynamoDB,CouchBase,MongoDB">Conditional</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio41" ng-model="opt41"
+                                  value="neo4j,OrientDB,DataStax">Low</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 42: Does your application involve Complex relationships/interaction between various entities?
+
+                <div class="radio" >
+                    <label><input type="radio" name="optradio42" ng-model="opt42"
+                                  value="Datastax,OrientDB,Neo4j">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio42" ng-model="opt42"
+                                  value="None">No</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 43: If your project demand different data model in addition to complex relationships, do you prefer one distributed system rather than having different vendors?
+                <div class="radio" >
+                    <label><input type="radio" name="optradio43" ng-model="opt43"
+                                  value="Datastax,OrientDB">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio43" ng-model="opt43"
+                                  value="Neo4j">No</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 44: What is the need for high query capabilities to extract data?
+                <div class="radio" >
+                    <label><input type="radio" name="optradio44" ng-model="opt44"
+                                  value="Redis,CouchBase,Cassandra,OracleNoSQL">Low</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio44" ng-model="opt44"
+                                  value="OrientDB,MarkLogic,RethinkDB,Terrastore,Datastax,RaptorDB,DynamoDB,CouchBase,MongoDB,MarkLogic,HyperTable,Accumulo,Hbase,Cassandra,Datastax,OrientDB,Neo4j">High</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 45: What is the type of data that you will be using for your project?
+                <div class="radio" >
+                    <label><input type="radio" name="optradio45" ng-model="opt45"
+                                  value="Redis,CouchBase,Cassandra,OracleNoSQL,Datastax,OrientDB,MarkLogic,RethinkDB,Terrastore,Datastax,RaptorDB,DynamoDB,CouchBase,MongoDB,HyperTable,Accumulo,Hbase,Cassandra">Structured(Excel,Relational)</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio45" ng-model="opt45"
+                                  value="OrientDB,MarkLogic,RethinkDB,Terrastore,Datastax,RaptorDB,DynamoDB,CouchBase,MongoDB">Semi-Structured (JSON,XML)</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio45" ng-model="opt45"
+                                  value="OrientDB,MarkLogic,RethinkDB,Terrastore,RaptorDB,DynamoDB,MongoDB,Neo4j,Redis,CouchBase,OracleNoSQL,Datastax,HyperTable,Accumulo,Hbase,Cassandra">Unstructured (WebSite, images, social media)</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 46: Are you willing to consider/deploy on cloud options?
+                <div class="radio" >
+                    <label><input type="radio" name="optradio46" ng-model="opt46"
+                                  value="Redis,CouchBase,Cassandra,OracleNoSQL,MarkLogic,RethinkDB,Terrastore,Datastax,DynamoDB,CouchBase,MongoDB,MarkLogic,OrientDB,Neo4j">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio46" ng-model="opt46"
+                                  value="None">No</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 47: Do you need a web interface to operate and manage database?
+                <div class="radio" >
+                    <label><input type="radio" name="optradio47" ng-model="opt47"
+                                  value="CouchDB,MongoDB,Terrastore,DynamoDB,Marklogic,Accumulo,OrientDB,RethinkDB,Terrastore,Datastax,RaptorDB,DynamoDB,CouchBase">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio47" ng-model="opt47"
+                                  value="None">No</label>
+                </div>
+            </h2>
+            <br>
+            <h2 align="left">Question 48: The database has APIs and other access methods?
+                <div class="radio" >
+                    <label><input type="radio" name="optradio48" ng-model="opt48"
+                                  value="Redis,Cassandra,OracleNoSQL,OrientDB,MarkLogic,Terrastore,RaptorDB,DynamoDB,CouchBase,MongoDB,HyperTable,Hbase,Cassandra,Datastax">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio48" ng-model="opt48"
+                                  value="RethinkDB">No</label>
+                </div>
+            </h2>
+            <br>
+            <button align="right" class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" ng-click="OnNextSubmit()" data-wow-delay=".3s">Show Analysis</button>
+
+        </div>
+    </div>
+</div>

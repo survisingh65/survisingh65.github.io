@@ -4,48 +4,65 @@
             <section class="cd-intro">
                 <h1>Qualifier Questionaries</h1>
             </section>
-            <h2 align="left">Question 1: Does you company support db?
+            <h2 align="left">Question 1: How much data are you working with?
                 <div class="radio" >
-                    <label><input type="radio" name="optradio1" ng-model="opt1" value="true">Yes</label>
+                    <label><input type="radio" name="optradio1" ng-model="opt1" value="false">Megabytes</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio1" ng-model="opt1" value="false">No</label>
+                    <label><input type="radio" name="optradio1" ng-model="opt1" value="false">Gibabytes to Terabytes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio1" ng-model="opt1" value="true">Petabytes to Exabytes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio1" ng-model="opt1" value="true">More than exabytes</label>
                 </div>
             </h2>
             <br>
-            <h2 align="left">Question 2: Does you company support db?
+            <h2 align="left">Question 2: Is your data...
                 <div class="radio" >
-                    <label><input type="radio" name="optradio2" ng-model="opt2" value="true">Yes</label>
+                    <label><input type="radio" name="optradio2" ng-model="opt2" value="false">Centralized</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio2" ng-model="opt2" value="false">No</label>
+                    <label><input type="radio" name="optradio2" ng-model="opt2" value="true">Distributed</label>
                 </div>
             </h2>
             <br>
-            <h2 align="left">Question 3: Does you company support db?
+            <h2 align="left">Question 3: Is your data...
                 <div class="radio" >
-                    <label><input type="radio" name="optradio3" ng-model="opt3" value="true">Yes</label>
+                    <label><input type="radio" name="optradio3" ng-model="opt3" value="false">Structured</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio3" ng-model="opt3" value="false">No</label>
+                    <label><input type="radio" name="optradio3" ng-model="opt3" value="true">Semi-structured</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio3" ng-model="opt3" value="true">Unstructured</label>
                 </div>
             </h2>
             <br>
-            <h2 align="left">Question 4: Does you company support db?
+            <h2 align="left">Question 4: Is your data model...
                 <div class="radio" >
-                    <label><input type="radio" name="optradio4" ng-model="opt4" value="true">Yes</label>
+                    <label><input type="radio" name="optradio4" ng-model="opt4" value="false">Stable</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio4" ng-model="opt4" value="false">No</label>
+                    <label><input type="radio" name="optradio4" ng-model="opt4" value="true">Flat schemas</label>
                 </div>
             </h2>
             <br>
-            <h2 align="left">Question 5: Does you company support db?
+            <h2 align="left">Question 5: Do you have...
                 <div class="radio" >
-                    <label><input type="radio" name="optradio5" ng-model="opt5" value="true">Yes</label>
+                    <label><input type="radio" name="optradio5" ng-model="opt5" value="false">Known complex interrelationships</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio5" ng-model="opt5" value="false">No</label>
+                    <label><input type="radio" name="optradio5" ng-model="opt5" value="true">Few complex interrelationships</label>
+                </div>
+            </h2>
+            <h2 align="left">Question 6: Is your data distributed?
+                <div class="radio" >
+                    <label><input type="radio" name="optradio6" ng-model="opt6" value="true">Yes</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio6" ng-model="opt6" value="false">No</label>
                 </div>
             </h2>
             <button class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" ng-click="OnAssessmentSubmit()" data-wow-delay=".3s" data-section="#works" >View Assessment</button>
