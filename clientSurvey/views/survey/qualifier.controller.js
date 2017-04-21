@@ -8,9 +8,9 @@
             ($scope.opt3 == "true")? validCounter++ : inValidCounter++;
             ($scope.opt4 == "true")? validCounter++ : inValidCounter++;
             ($scope.opt5 == "true")? validCounter++ : inValidCounter++;
-            ($scope.opt6 == "true")? validCounter++ : inValidCounter++;
+            //($scope.opt6 == "true")? validCounter++ : inValidCounter++;
 
-            if(validCounter >  3){
+            if(validCounter >  2){
                 console.log("Success");
                 $rootScope.result = "Your company needs a Big Data Project";
                 $rootScope.needCloud = "true";
