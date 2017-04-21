@@ -79,62 +79,47 @@
                 data2[arrList20[p]] = data2[arrList20[p]] + 25;
             }
             //3
-            var question31 = $scope.opt31;
-            var question32 = $scope.opt32;
-            var question33 = $scope.opt33;
-            var result3 = question31 + "," + question32 + "," + question33  ;//+ "," + question13;
+            var question3 = $scope.opt3;
+            var  result3 = question3;
 
-            var arrList30 = result3.split(",");
-            console.log(arrList30);
+            var arrList3 = result3.split(",");
+            console.log(arrList3);
 
-            console.log("testing 3!!!!!");
-
-            arrList30 = arrList30.filter( function( item, index, inputArray ) {
-                return inputArray.indexOf(item) == index;
-            });
-
-            console.log(arrList30);
-
-            for(var p in arrList30){
-                console.log(arrList30[p]);
-                data[arrList30[p]] = data[arrList30[p]] + 25;
+            for(var p in arrList3){
+                console.log(arrList3[p]);
+                data[arrList3[p]] = data[arrList3[p]] + 25;
             }
-            for(var p in arrList30){
-                console.log(arrList30[p]);
-                data1[arrList30[p]] = data1[arrList30[p]] + 25;
+
+            for(var p in arrList3){
+                console.log(arrList3[p]);
+                data1[arrList3[p]] = data1[arrList3[p]] + 25;
             }
-            for(var p in arrList30){
-                console.log(arrList30[p]);
-                data2[arrList30[p]] = data2[arrList30[p]] + 25;
+
+            for(var p in arrList3){
+                console.log(arrList3[p]);
+                data2[arrList3[p]] = data2[arrList3[p]] + 25;
             }
-            //4
-            var question41 = $scope.opt41;
-            var question42 = $scope.opt42;
-            var question43 = $scope.opt43;
-            var result4 = question41 + "," + question42 + "," + question43  ;//+ "," + question13;
 
-            var arrList40 = result4.split(",");
-            console.log(arrList40);
+           //4
+            var question4 = $scope.opt4;
+            var  result4 = question4;
 
-            console.log("testing 4!!!!!");
+            var arrList4 = result4.split(",");
+            console.log(arrList4);
 
-            arrList40 = arrList40.filter( function( item, index, inputArray ) {
-                return inputArray.indexOf(item) == index;
-            });
-
-            console.log(arrList40);
-
-            for(var p in arrList40){
-                console.log(arrList40[p]);
-                data[arrList40[p]] = data[arrList40[p]] + 25;
+            for(var p in arrList4){
+                console.log(arrList4[p]);
+                data[arrList4[p]] = data[arrList4[p]] + 25;
             }
-            for(var p in arrList40){
-                console.log(arrList40[p]);
-                data1[arrList40[p]] = data1[arrList40[p]] + 25;
+
+            for(var p in arrList4){
+                console.log(arrList4[p]);
+                data1[arrList4[p]] = data1[arrList4[p]] + 25;
             }
-            for(var p in arrList40){
-                console.log(arrList40[p]);
-                data2[arrList40[p]] = data2[arrList40[p]] + 25;
+
+            for(var p in arrList4){
+                console.log(arrList4[p]);
+                data2[arrList4[p]] = data2[arrList4[p]] + 25;
             }
             //5
             var question51 = $scope.opt51;

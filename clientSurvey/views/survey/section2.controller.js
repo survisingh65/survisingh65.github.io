@@ -9,7 +9,6 @@
             var question3 = $scope.opt28;
             var question4 = $scope.opt29;
             var question5 = $scope.opt30;
-            var question6 = $scope.opt31;
             var question7 = $scope.opt32;
             var question8 = $scope.opt33;
             var question9 = $scope.opt34;
@@ -41,7 +40,7 @@
                 data[arrList10[p]] = data[arrList10[p]] + 25;
             }
 
-            var result = question5 + "," + question6 + "," + question7 + "," +
+            var result = question5 + "," + question7 + "," +
                 question11 + "," + question12; //10
             var result1 = question1 + "," + question2 + "," + question3 + "," +
                 question4 + "," + question8 + "," + question9 ;//25

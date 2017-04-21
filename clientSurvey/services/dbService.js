@@ -27,6 +27,8 @@
             Accumulo:0,
             Hbase:0,
             Cassandra:0,
+            CartoDb:0,
+            CouchDB:0,
             None:0
         }
 
